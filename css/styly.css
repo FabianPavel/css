@@ -7,10 +7,10 @@ body {
 #obal{
   max-width: 960px;/* Maxim�ln� ���ka 960 px */
   margin: 0 auto;/* Nastav okraje tak, aby byl blok obal na str�nce vycentrov�n */
-  /* Ohrani�en� - pln� �ed� ��ra o tlou��ce 1 pixel  */
+  border: gray 1px solid;/* Ohrani�en� - pln� �ed� ��ra o tlou��ce 1 pixel  */
   padding: 20px;/* Vnit�n� odsazen� - 20 pixel� */
   background-color: white;/* B�l� barva pozad� */
-  color: #333;/* Barva textu - tmav� �ed� odst�n, �estn�ctkov� hodnoty 3 */
+  color: rgba(63, 61, 61, 0.733);/* Barva textu - tmav� �ed� odst�n, �estn�ctkov� hodnoty 3 */
 }
 
 nav{
@@ -38,9 +38,8 @@ h1 {
   font-size: 200%;/* Velikost nadpisu bude dvojn�sobn� vzhledem k z�kladn� velikosti p�sma */
   font-weight: bold;/* Nadpis bude tu�n� */
   color: rgb(0,153,204);/* Barva nadpisu bude toto�n� s barvou zv�razn�n�ho odkazu */
-  /* Nadpis bude vyps�n velk�mi p�smeny */
-  /* V��ka ��dku nadpisu bude 2em */
-}
+  font-variant: small-caps;/* Nadpis bude vyps�n velk�mi p�smeny */
+  }
 
 h2, h3{
   font-weight: 200; 
@@ -59,7 +58,8 @@ h3 {
 
 p, li {
   line-height: 1.5em;
-  /* Horn� a spodn� okraj odstavc� i odr�ek budou odsazeny o hodnotu 1em */
+  margin-top: 1cm;/* Horn� a spodn� okraj odstavc� i odr�ek budou odsazeny o hodnotu 1em */
+  margin-bottom: 1cm;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
 }
 
 li {
-  /* Nastavte styl odr�ek tak, aby odpov�dal p�edloze (�tvercov� odr�ka) */
+  list-style-type: square;/* Nastavte styl odr�ek tak, aby odpov�dal p�edloze (�tvercov� odr�ka) */
   list-style-position: outside;
   margin-left: 20px;
 }
